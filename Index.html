@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#090a0f">
+<title>YO MAMA // Remix Machine</title>
+<style>
+:root{--bg:#090a0f;--panel:#131620;--panel2:#1a1e2a;--ink:#f5f6fb;--muted:#9da5b8;--pink:#ff4d88;--lime:#d3ff63;--line:#2b3040;--cyan:#75e6ef}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% -12%,#3b1e3a 0,transparent 42%),var(--bg);color:var(--ink);font:15px/1.5 Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;min-height:100vh}
+main{max-width:1120px;margin:auto;padding:24px 18px 60px}.top{display:flex;justify-content:space-between;align-items:center;gap:12px}.brand{font-weight:950;letter-spacing:.13em;font-size:12px}.brand b{color:var(--pink)}.status{border:1px solid var(--line);border-radius:99px;padding:6px 11px;color:var(--muted);font-size:10px;letter-spacing:.12em}
+.hero{text-align:center;padding:50px 0 30px}.eyebrow{color:var(--lime);font-size:10px;font-weight:900;letter-spacing:.22em}.hero h1{font-size:clamp(42px,8vw,82px);line-height:.9;letter-spacing:-.075em;margin:15px 0}.hero h1 em{font-style:normal;color:var(--pink)}.hero p{max-width:610px;margin:18px auto;color:var(--muted);font-size:15px}
+.grid{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(290px,.75fr);gap:15px}.panel{background:linear-gradient(155deg,#191d29,#10121a);border:1px solid var(--line);border-radius:19px;padding:18px;box-shadow:0 18px 55px #0005}.panel h2{font-size:11px;letter-spacing:.16em;margin:0 0 13px;color:#cbd1df}.playerbox{background:#05060a;border:1px solid #34394a;border-radius:14px;overflow:hidden;aspect-ratio:16/9;display:grid;place-items:center;position:relative}.playerbox iframe{width:100%;height:100%;border:0}.placeholder{text-align:center;padding:24px;color:var(--muted)}.placeholder strong{display:block;color:#fff;font-size:21px;margin-bottom:7px}.playrow{display:flex;gap:9px;flex-wrap:wrap;margin-top:13px}.btn{border:0;border-radius:11px;padding:12px 15px;font-weight:900;cursor:pointer;background:var(--lime);color:#11150a}.btn.primary{background:var(--pink);color:#190710;flex:1;min-width:220px;font-size:16px;padding:15px;box-shadow:0 8px 25px #ff4d8830}.btn.alt{background:#252a39;color:#f5f6fb;border:1px solid #3b4154}.btn:disabled{opacity:.45;cursor:not-allowed}.btn:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
+.readout{margin-top:13px;background:#0b0d14;border:1px solid var(--line);border-radius:13px;padding:13px}.readout .kicker{font-size:9px;color:var(--lime);font-weight:900;letter-spacing:.18em}.pairline{font-size:14px;margin-top:5px;color:#e6e9f2}.progress{height:4px;background:#292e3d;border-radius:20px;margin-top:11px;overflow:hidden}.progress i{display:block;height:100%;width:0;background:var(--pink);transition:width .2s}.small{font-size:11px;color:var(--muted);margin-top:9px}.mode{display:flex;gap:7px;flex-wrap:wrap;margin:12px 0}.mode button{background:#202433;color:#cbd1df;border:1px solid #363c50;border-radius:9px;padding:8px 10px;font-size:11px;font-weight:800;cursor:pointer}.mode button.active{background:#303a22;border-color:#7c9d3d;color:var(--lime)}
+.controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.field{display:grid;gap:5px;margin:10px 0}.field label{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}.field input,.field select{width:100%;background:#090b12;color:#fff;border:1px solid #34394b;border-radius:9px;padding:10px;font:inherit}.two{display:grid;grid-template-columns:1fr 1fr;gap:9px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px}.stat{background:#0c0e15;border:1px solid var(--line);border-radius:11px;padding:10px}.stat b{display:block;font-size:19px;color:var(--lime)}.stat span{font-size:9px;color:var(--muted);letter-spacing:.08em;text-transform:uppercase}.library{margin-top:16px}.clip{display:flex;justify-content:space-between;gap:10px;align-items:flex-start;padding:9px 0;border-top:1px solid #292e3b;font-size:12px}.clip small{display:block;color:var(--muted);margin-top:2px}.chip{font-size:9px;letter-spacing:.06em;text-transform:uppercase;color:var(--cyan);border:1px solid #34505a;border-radius:99px;padding:4px 7px;white-space:nowrap}.note{border-left:3px solid var(--cyan);padding:10px 12px;background:#10191d;color:#c8d7d9;font-size:11px;border-radius:0 9px 9px 0;margin-top:14px}.source{margin-top:17px;font-size:10px;color:#858da0}.source a{color:var(--cyan)}footer{text-align:center;color:#72798b;font-size:10px;margin-top:24px}
+@media(max-width:760px){main{padding:18px 12px 45px}.grid{grid-template-columns:1fr}.hero{padding:40px 0 24px}.panel{padding:14px}.playerbox{min-height:190px}.status{font-size:9px}.hero p{font-size:14px}}
+</style></head>
+<body><main>
+<div class="top"><div class="brand">YO MAMA <b>///</b> REMIX MACHINE</div><div class="status">BUILT-IN CLIP LIBRARY · BETA</div></div>
+<section class="hero"><div class="eyebrow">REAL SOURCE CLIPS · HALF-JOKE MASHUPS</div><h1>MAKE IT <em>MAKE SENSE.</em></h1><p>Take the setup from one Yo Mama joke, cut it off, then smash in the punchline from another. One Franken-joke. Hit generate.</p></section>
+<div class="grid">
+<section class="panel"><h2>01 / THE REMIX PLAYER</h2><div class="playerbox" id="playerbox"><div class="placeholder"><strong>Ready to roast.</strong>Press generate to splice one joke setup into another joke’s punchline.</div></div>
+<div class="playrow"><button class="btn primary" id="generate">⚡ GENERATE A COHERENT REMIX</button></div>
+<div class="playrow"><button class="btn alt" id="replay" disabled>↻ Replay</button><button class="btn alt" id="another" disabled>Another combo →</button><button class="btn alt" id="nextclip" disabled>Skip to punchline</button></div>
+<div class="mode"><button class="active" data-mode="match">MATCHED TOPICS</button><button data-mode="variety">SAME VIBE</button><button data-mode="chaos">CHAOS MODE</button></div>
+<div class="readout"><div class="kicker" id="state">MATCH ENGINE READY</div><div class="pairline" id="pairtext">Your next two-clip combo will show up here.</div><div class="progress"><i id="bar"></i></div><div class="small" id="detail">The remix plays only the setup from joke A, then jumps into the punchline of joke B. Pairing keeps the joke category compatible.</div><div class="small"><a id="sourceclip" href="https://www.youtube.com/watch?v=XG8b7WhANNA" target="_blank" rel="noopener" style="color:var(--cyan)">Open source video on YouTube ↗</a></div></div>
+<div class="stats"><div class="stat"><b id="clipcount">28</b><span>Source segments</span></div><div class="stat"><b id="paircount">—</b><span>Possible pairs</span></div><div class="stat"><b id="played">0</b><span>Combos played</span></div></div>
+<div class="source">Source compilation: <a href="https://www.youtube.com/watch?v=XG8b7WhANNA" target="_blank" rel="noopener">100 Yo Mama Jokes – Can You Watch Them All?</a>. Transcript start markers are approximate. The setup/punchline splice point is estimated, so some cuts may need tuning.</div>
+</section>
+<section class="panel"><h2>02 / BUILT-IN CLIP LIBRARY</h2><div class="two"><div class="field"><label>Filter category</label><select id="filter"><option value="all">All categories</option><option value="stupid">Stupid</option><option value="fat">Fat</option><option value="ugly">Ugly</option><option value="hairy">Hairy</option><option value="short">Short</option><option value="old">Old</option><option value="poor">Poor</option></select></div><div class="field"><label>Search jokes</label><input id="search" placeholder="Try: Xbox, Moses…"></div></div>
+<div id="library"></div>
+<div class="note"><b>Remix note:</b> Each combo plays about 2 seconds of joke A (the setup), then jumps about 2 seconds into joke B (the punchline). YouTube may show ads, and autoplay behavior depends on your browser.</div>
+<div class="note"><b>Cut accuracy:</b> The transcript gives approximate joke start markers, not exact word-level timestamps. The splice point is an estimated cut; the displayed mashup text shows exactly which setup and punchline are being combined.</div>
+</section></div>
+<footer>Unofficial fan-made tool. Original video and audio remain on YouTube and belong to their respective rights holders.</footer>
+</main>
+<script>
+const VIDEO='XG8b7WhANNA';
+// Transcript-backed joke segments. Start markers are approximate. The splice point is an estimated 2.1 seconds after each marker.
+const clips=[
+{id:'a1',t:'Yo mama so stupid, she thought Nickelback was a refund.',c:'stupid',s:0,d:['music','refund','band']},
+{id:'a2',t:'Yo mama so fat, when she dies in Call of Duty, the player gets a five-person kill streak.',c:'fat',s:23,d:['gaming','call of duty']},
+{id:'a3',t:'Yo mama so ugly, One Direction went the other direction.',c:'ugly',s:39,d:['music','one direction']},
+{id:'a4',t:'Yo mama so stupid, she thought seaweed was something that fish smoke.',c:'stupid',s:73,d:['ocean','fish','smoking']},
+
+{id:'a6',t:'Yo mama so fat, when Dracula sucked her blood, he got diabetes.',c:'fat',s:97,d:['dracula','blood','diabetes']},
+{id:'a7',t:'Yo mama so stupid, she bought tickets to Xbox Live.',c:'stupid',s:127,d:['gaming','xbox']},
+{id:'a8',t:'Yo mama so old, her first Christmas was the first Christmas ever celebrated.',c:'old',s:137,d:['christmas','history']},
+{id:'a9',t:'Yo mama so stupid, she put two quarters in her ears and thought she was listening to 50 Cent.',c:'stupid',s:156,d:['music','money','50 cent']},
+{id:'a10',t:'Yo mama so old, when she farts, dust comes out.',c:'old',s:184,d:['dust','age']},
+{id:'a11',t:'Yo mama so stupid, she made an appointment with Dr Pepper.',c:'stupid',s:197,d:['soda','doctor']},
+{id:'a12',t:'Yo mama so hairy, Bigfoot took her picture and planned to make money from it.',c:'hairy',s:275,d:['bigfoot','cryptid','hair']},
+{id:'a13',t:'Yo mama so stupid, she tried to climb Mountain Dew thinking it was a mountain.',c:'stupid',s:304,d:['soda','mountain']},
+{id:'a14',t:'Yo mama so fat, when she died, the stairway to heaven broke under her weight.',c:'fat',s:344,d:['heaven','stairs']},
+{id:'a15',t:'Yo mama so short, you can see her legs on her driver’s license.',c:'short',s:368,d:['driving','license','small']},
+{id:'a16',t:'Yo mama so poor, she eats cereal with a fork to save milk.',c:'poor',s:382,d:['food','money','cereal']},
+
+{id:'a18',t:'Yo mama so fat, half of her is in a parallel universe.',c:'fat',s:414,d:['science','universe']},
+{id:'a19',t:'Yo mama so hairy, she shaves with a weed whacker.',c:'hairy',s:430,d:['yard','tools','hair']},
+{id:'a20',t:'Yo mama so old, when I told her to act her age, she died.',c:'old',s:445,d:['age','death']},
+{id:'a21',t:'Yo mama so short, she broke her leg getting off the toilet.',c:'short',s:460,d:['bathroom','small']},
+{id:'a22',t:'Yo mama so fat, her splash attack does damage.',c:'fat',s:491,d:['pokemon','gaming','water']},
+{id:'a23',t:'Yo mama so ugly, even the Kool-Aid Man was horrified when he busted through her wall.',c:'ugly',s:501,d:['kool aid','wall']},
+{id:'a24',t:'Yo mama so stupid, she yelled into an envelope because she wanted to send a voice mail.',c:'stupid',s:513,d:['mail','phone','technology']},
+{id:'a25',t:'Yo mama so old, she sat next to Moses in third grade.',c:'old',s:576,d:['moses','school','history']},
+{id:'a26',t:'Yo mama so stupid, she studied for a drug test by taking all of the drugs.',c:'stupid',s:590,d:['school','drugs','test']},
+{id:'a27',t:'Yo mama so hairy, she stars in Donkey Kong games.',c:'hairy',s:618,d:['gaming','donkey kong','hair']},
+{id:'a28',t:'Yo mama so ugly, her reflection said, “I quit.”',c:'ugly',s:653,d:['mirror','reflection']},
+{id:'a29',t:'Yo mama so fat, she jumped up in the air and got stuck.',c:'fat',s:679,d:['gravity','stuck']},
+{id:'a30',t:'Yo mama so fat, she puts on her belt with a boomerang.',c:'fat',s:723,d:['clothes','boomerang']},
+{id:'a31',t:'Yo mama so ugly, she gives Freddy Krueger nightmares.',c:'ugly',s:732,d:['horror','freddy krueger']},
+{id:'a32',t:'Yo mama so poor, the ducks throw bread at her.',c:'poor',s:745,d:['ducks','food','money']},
+{id:'a33',t:'Yo mama so stupid, she got fired from the M&M factory for throwing out the W’s.',c:'stupid',s:759,d:['candy','work']},
+{id:'a34',t:'Yo mama so fat, I took a picture of her last Christmas and it’s still printing.',c:'fat',s:789,d:['camera','christmas']},
+{id:'a35',t:'Yo mama so ugly, her birth certificate is an apology letter from the Trojan Man.',c:'ugly',s:845,d:['birth','trojan']},
+{id:'a36',t:'Yo mama so fat, even Kirby can’t eat her.',c:'fat',s:979,d:['gaming','kirby']},
+{id:'a37',t:'Yo mama so ugly, she’s the reason Sonic the Hedgehog runs fast.',c:'ugly',s:1085,d:['gaming','sonic']},
+{id:'a38',t:'Yo mama so stupid, she threw water at the computer to put out a flame war.',c:'stupid',s:1116,d:['computer','internet']},
+{id:'a39',t:'Yo mama so short, she committed suicide by jumping off the bed.',c:'short',s:1207,d:['bed','small']},
+{id:'a40',t:'Yo mama so old, her breast milk is powder.',c:'old',s:1226,d:['age','milk']},
+{id:'a41',t:'Yo mama so stupid, she put paper on the TV and called it Paper View.',c:'stupid',s:1264,d:['television','wordplay']},
+{id:'a42',t:'Yo mama so short, she can do backflips under the bed.',c:'short',s:1277,d:['bed','small','gymnastics']}
+];
+const SETUP_SECONDS=2.1, PUNCHLINE_SECONDS=5.8;
+let mode='match',pair=null,player=null,apiReady=false,queued=null,played=0,clipIndex=0,history=[];
+const $=id=>document.getElementById(id);const fmt=s=>`${Math.floor(s/60)}:${String(s%60).padStart(2,'0')}`;
+function esc(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function parts(c){const i=c.t.indexOf(',');return i<0?{setup:c.t,punchline:''}:{setup:c.t.slice(0,i+1),punchline:c.t.slice(i+1).trim()};}
+function remixText(p){const a=parts(p.a),b=parts(p.b);return a.setup+' '+b.punchline;}
+function renderLibrary(){let f=$('filter').value,q=$('search').value.toLowerCase();let list=clips.filter(c=>(f==='all'||c.c===f)&&(!q||c.t.toLowerCase().includes(q)||c.d.join(' ').includes(q)));$('library').innerHTML=list.map(c=>{const x=parts(c);return `<div class="clip"><div><b>${esc(c.t)}</b><small>${c.c.toUpperCase()} · setup: ${esc(x.setup)} · punchline: ${esc(x.punchline)}</small></div><span class="chip">source joke</span></div>`}).join('')||'<div class="small">No matching clips.</div>';}
+function score(a,b){let n=0;if(a.c===b.c)n+=10;else n-=8;let shared=a.d.filter(x=>b.d.includes(x)).length;n+=shared*4;if(a.d.some(x=>b.d.includes(x)))n+=2;if(a.id===b.id)n=-99;return n;}
+function makePairs(){let out=[];for(let a of clips)for(let b of clips){if(a===b||a.c!==b.c)continue;let s=score(a,b);if(mode==='chaos')s=Math.random()*10+1;if(s>0)out.push({a,b,s});}return out;}
+function choosePair(){let all=makePairs();$('paircount').textContent=all.length;if(!all.length)return null;all.sort((x,y)=>y.s-x.s);let pool=mode==='match'?all.slice(0,Math.max(1,Math.ceil(all.length*.28))):all;let fresh=pool.filter(p=>!history.includes(p.a.id+'>'+p.b.id));if(!fresh.length){history=[];fresh=pool;}let p=fresh[Math.floor(Math.random()*fresh.length)];history.push(p.a.id+'>'+p.b.id);return p;}
+function setStatus(k,t,d='',progress=0){$('state').textContent=k;$('pairtext').textContent=t;$('detail').textContent=d;$('bar').style.width=progress+'%';}
+function loadClip(i){if(!pair)return;clipIndex=i;let c=i===0?pair.a:pair.b;let start=i===0?c.s:c.s+SETUP_SECONDS;let end=i===0?c.s+SETUP_SECONDS:start+PUNCHLINE_SECONDS;$('sourceclip').href=`https://www.youtube.com/watch?v=${VIDEO}&t=${Math.floor(start)}s`;setStatus(i===0?'PLAYING SETUP · JOKE A':'PLAYING PUNCHLINE · JOKE B',i===0?parts(pair.a).setup:parts(pair.b).punchline,i===0?`Setup source: ${fmt(c.s)} → cut after about ${SETUP_SECONDS}s`:`Punchline source: ${fmt(start)} → ${fmt(end)} · estimated splice`,i===0?35:75);if(player&&apiReady){player.loadVideoById({videoId:VIDEO,startSeconds:start,endSeconds:end});}else{queued=i;initPlayer();}}
+function onPlayerState(e){if(e.data===0){if(clipIndex===0)loadClip(1);else{setStatus('REMIX COMPLETE',remixText(pair),'Setup A + punchline B. Both halves played.',100);}}}
+function initPlayer(){if(player||!apiReady)return;player=new YT.Player('ytplayer',{width:'100%',height:'100%',videoId:VIDEO,playerVars:{playsinline:1,rel:0,modestbranding:1,enablejsapi:1},events:{onReady:()=>{if(queued!==null){let i=queued;queued=null;loadClip(i)}},onStateChange:onPlayerState,onError:()=>setStatus('PLAYER ERROR','YouTube could not load this segment.','Try again or open the source video directly.')}});}
+window.onYouTubeIframeAPIReady=()=>{apiReady=true;initPlayer();};
+(function(){let s=document.createElement('script');s.src='https://www.youtube.com/iframe_api';document.head.appendChild(s);})();
+function startPair(p){pair=p;clipIndex=0;if(player){try{player.destroy()}catch{}player=null;}$('playerbox').innerHTML='<div id="ytplayer" style="width:100%;height:100%"></div>'; $('replay').disabled=false;$('another').disabled=false;$('nextclip').disabled=false;queued=0;initPlayer();if(apiReady)initPlayer();$('played').textContent=++played;setStatus('NEW HALF-JOKE REMIX',remixText(p),'Joke A supplies the setup. Joke B supplies the punchline.',0);}
+function generate(){let p=choosePair();if(!p){setStatus('NO MATCH','No compatible pair found.','Try another pairing mode.');return;}startPair(p);}
+$('generate').onclick=generate;$('another').onclick=generate;$('replay').onclick=()=>{if(pair)startPair(pair)};$('nextclip').onclick=()=>{if(pair)loadClip(1)};$('filter').onchange=renderLibrary;$('search').oninput=renderLibrary;
+document.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>{mode=b.dataset.mode;document.querySelectorAll('[data-mode]').forEach(x=>x.classList.toggle('active',x===b));generate();});
+$('clipcount').textContent=clips.length;renderLibrary();$('paircount').textContent=makePairs().length;
+</script></body></html>
